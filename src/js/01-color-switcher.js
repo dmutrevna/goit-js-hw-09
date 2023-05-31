@@ -14,11 +14,11 @@ function getRandomHexColor() {
 }
 
 function onClickStart() {
+  btnStart.disabled = true;
+  btnStop.disabled = false;
   intervalId = setInterval(() => {
     const color = getRandomHexColor();
     document.body.style.backgroundColor = color;
-    btnStart.disabled = true;
-    btnStop.disabled = false;
   }, 1000);
 }
 

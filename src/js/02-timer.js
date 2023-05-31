@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const btnStart = document.querySelector('[data-start]');
+const formData = document.querySelector('#datetime-picker');
 const daysElement = document.querySelector('[data-days]');
 const hoursElement = document.querySelector('[data-hours]');
 const minutesElement = document.querySelector('[data-minutes]');
@@ -53,6 +54,7 @@ const options = {
     }
 
     btnStart.disabled = false;
+    formData.disabled = true;
   },
 };
 
